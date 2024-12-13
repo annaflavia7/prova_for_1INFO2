@@ -8,11 +8,18 @@
     */
 
     //ENTRADA
-
-
+    const frase = prompt(`Insira uma frase`).trim().toUpperCase();
+    let consoantes = 0;
+   
     //PROCESSAMENTO
+    for (let item of frase) {
+        if (item == "B" || item == "C" || item == "D" || item == "F" || item == "G" || item == "H" || item == "J" || item == "K" || item == "L" || item == "M" || item == "N"|| item == "P" || item == "Q" || item == "R" || item == "S" || item == "T" || item == "V" || item == "W" || item == "X" || item == "Y" || item == "Z") {
+            consoantes = consoantes + 1
+        }
 
-
+    }
     //SAÍDA
-    
+    alert(`Consoantes: ${consoantes}`);
+
+
 </script>
